@@ -96,3 +96,12 @@ body {
  #04AA6D;
     color: white;
 }
+footer{
+  align-items: center;
+  margin-top: 150px;
+  width: fit-content;
+  padding: 100px 15%;
+  background: #333;
+  color: #efefef;
+  display: flex;
+  }
