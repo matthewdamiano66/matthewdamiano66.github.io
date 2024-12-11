@@ -2,17 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(files/bg.jpg);
 }
-
-/* Header Styles */
 header {
-    background-color: #f2f2f2;
-    padding:   
- 20px;
+    background-color: #453b82;
+    padding:   20px;
+    
 }
 
 #nav {
     text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(127, 8, 231, 0.905);
 }
 
 .topnav a {
@@ -24,39 +24,41 @@ header {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #3d3571;
     color: black;
 }
 
 .topnav a.active   
  {
-    background-color:   
- #04AA6D;
+    background-color:   #04AA6D;
     color: white;
 }
-
-/* Body Styles */
 .me {
+    padding-top: 50px;
     display: block;
     margin: 0 auto;
     width: 400px;
     height: 400px;
     border-radius: 50%;
+    
 }
-.me:hover:hover {
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
-}
-
-
-.me {
-    transition: box-shadow 0.3s ease;
-}
+.me:hover {
+    box-shadow: 2px 5px  rgba(255, 0, 162, 0.3);
+  }
 #Bio {
     text-align: center;
     margin-top: 20px;
     text-indent: 10px;
     text-wrap: justify;
-   
+    color: white;
+    font-size: 35px;
+    text-decoration: underline;
+}
+#Title{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 #pdf{
@@ -64,28 +66,27 @@ header {
     height: 975px;
     padding-left: 150px;
 }
-object{
-    background-color: #04AA6D;
-}
-
 h1{
     text-align: center;
     font-family: serif;
 }
-
-footer{
-margin-top: 150px;
-width: 100%;
-padding: 100px 15%;
-background: #333;
-color: #efefef;
-display: flex;
-}
 .GitHub-Logo{
     padding-top: 100px;
     height: 250px;
-    width: 300px;
+    width: 250px;
     padding-left: 90px;
+}
+
+#github-text{
+  color: #00a1f8;
+  position: absolute;
+  top: 175px;
+  right: 1150px;
+  width: 200px;
+  height: 100px;
+  font-size: 40px;
+  text-decoration: underline;
+
 }
 .LinkedIn-logo{
     height: 250px;
@@ -93,11 +94,114 @@ display: flex;
     padding-left: 100px;
     padding-top: 200px ;
 }
-#github-text{
-    color: #000000;
-    position: absolute;
-  top: 250px;
-  right: 1100px;
+#Linked-in-text{
+  color: #00a1f8;
+  position: absolute;
+  top: 650px;
+  right: 1150px;
   width: 200px;
   height: 100px;
+  font-size: 40px;
+  text-decoration: underline;
 }
+#Stack-Overflow-Text{
+  color: #00a1f8;
+  position: absolute;
+  top: 175px;
+  right: 100px;
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.Stack-OverFlow-Logo{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    right: 380px;
+}
+.Youtube-Logo{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 650px;
+    right: 380px;
+}
+#Youtube-text{
+    color: #00a1f8;
+    position: absolute;
+    top: 700px;
+    right: 150px;
+    width: 200px;
+    height: 100px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+#find{
+    text-align: center;
+    color: #00a1f8;
+    font-size: 20px;
+}
+form {
+    padding-top:20px ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  form li {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(20, 200, 220);
+
+  }
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ec1919;
+    border-radius: 3px;
+    box-sizing: border-box; 
+
+  }
+  textarea {
+    min-height: 100px;
+    min-width: 90px;
+    resize: none;
+  }
+  button {
+    background-color: #3b3b3f; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
+  }
+  button:hover {
+    background-color: #9c04d3a8;
+  }
+  .error {
+    color: red;
+    font-size: smaller;
+  }
+  #warning{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 35px;
+  }
