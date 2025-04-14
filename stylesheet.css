@@ -1,0 +1,386 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More professional font */
+  margin: 0;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #343a40; /* Dark gray text */
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 700px; /* Slightly narrower for better readability */
+  margin: 30px auto; /* More top/bottom margin */
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+h1, h2, h3 {
+  color: #007bff; /* Primary blue */
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  text-align: center; /* Center the main heading */
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #dee2e6; /* Lighter border */
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600; /* Semi-bold */
+  color: #495057; /* Slightly darker heading */
+}
+
+p {
+  margin-bottom: 15px;
+  color: #545b62; /* Softer paragraph text */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Navigation Styles */
+header {
+  background-color: #343a40; /* Darker header */
+  color: #fff;
+  padding: 1.2em 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#nav {
+  width: 100%;
+}
+
+.topnav {
+  background-color: #495057; /* Slightly lighter nav background */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px; /* Rounded nav */
+  margin: 0 auto;
+  max-width: 600px; /* Limit nav width */
+}
+
+.topnav a {
+  display: block;
+  color: #f8f9fa; /* Light text */
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.topnav a:hover {
+  background-color: #545b62;
+  color: #fff;
+}
+
+.topnav a.active {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500; /* Slightly bolder active link */
+}
+
+/* Links Page Specific Styles */
+#find {
+  font-size: 1.3em;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #545b62;
+}
+
+.links-container {
+  text-align: center;
+}
+
+.links-container > div {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-container img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.links-container img:hover {
+  opacity: 1;
+}
+
+.links-container p {
+  font-size: 1.2em;
+  color: #495057;
+}
+
+/* Resume Page Specific Styles */
+.objective {
+  font-style: italic;
+  margin-bottom: 25px;
+  color: #6c757d; /* Muted text */
+}
+
+.skills-list {
+  line-height: 1.6;
+}
+
+/* Contact Page Specific Styles */
+.contact-container {
+  padding: 50px;
+}
+
+.contact-container h2 {
+  text-align: center; /* Center the contact form title */
+  margin-bottom: 30px;
+  color: #212529; /* Darker heading */
+}
+
+#warning {
+  color: #dc3545; /* Bootstrap danger color */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#contact-form {
+  margin-top: 20px;
+}
+
+#contact-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact-form li {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #495057;
+  font-size: 1.1em;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="number"] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ced4da; /* Bootstrap border color */
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1em;
+  resize: vertical;
+  min-height: 150px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="number"]:focus,
+#contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap focus shadow */
+}
+
+#contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Home Page Specific Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.me {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 35px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.me:hover {
+  transform: scale(1.08);
+}
+
+.centered-image {
+  align-self: center;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.underlined-text {
+  text-decoration: underline;
+}
+
+.larger-text {
+  font-size: 1.4em;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+#bio {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+#title {
+  color: #007bff;
+  margin-bottom: 40px;
+  font-size: 1.8em;
+}
+
+.site-header {
+  background-color: #333; /* Dark background for contrast */
+  color: white;
+  padding: 1rem 0; /* Use rem for better scalability */
+  border-bottom: 2px solid #555;
+}
+
+.top-navigation {
+  max-width: 960px; /* Limit width for better readability on larger screens */
+  margin: 0 auto; /* Center the navigation */
+  padding: 0 20px; /* Add some horizontal padding */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out logo (if you add one) and links */
+  align-items: center; /* Vertically align items */
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange links horizontally */
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  display: block; /* Make the entire link area clickable */
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem; /* Comfortable padding */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  font-weight: bold; /* Make links stand out */
+}
+
+.nav-link:hover {
+  background-color: #555; /* Darker background on hover */
+  color: #f0f0f0; /* Slightly lighter text on hover */
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Highlight the active page */
+  color: white;
+}
+
+/* Optional: Add a logo area */
+.site-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .top-navigation {
+      flex-direction: column; /* Stack logo and links vertically */
+      align-items: flex-start; /* Align to the left */
+      padding: 10px;
+  }
+
+  .navigation-list {
+      flex-direction: column; /* Stack links vertically */
+      width: 100%; /* Make links take full width */
+  }
+
+  .nav-item {
+      width: 100%;
+      border-bottom: 1px solid #555; /* Add separators between links */
+  }
+
+  .nav-item:last-child {
+      border-bottom: none; /* Remove border from the last item */
+  }
+
+  .nav-link {
+      padding: 0.75rem;
+  }
+}
+#main-conter{
+  align-items: center;
+}

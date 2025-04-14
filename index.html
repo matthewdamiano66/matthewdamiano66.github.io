@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .main-content {
+            display: flex; /* Enable flexbox for centering */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically in the viewport (optional, depending on desired effect) */
+            min-height: calc(100vh - (/* Header height */ 60px + /* Footer height */ 60px)); /* Optional: Ensure content takes at least the remaining viewport height */
+            padding: 20px; /* Add some padding around the content */
+            text-align: center; /* Center text within the elements */
+        }
+
+        .me {
+            max-width: 300px; /* Adjust as needed */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Optional: Rounded corners for the image */
+        }
+
+        #Bio {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        #Title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff; /* Example color for the title */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav id="main-navigation" class="top-navigation">
+            <ul class="navigation-list">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
+                <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <img class="me" src="files/me.jpeg" alt="me">
+        <p id="Bio">Matthew, 25, Millville MA, 01529 </p>
+        <p id="Title">Software and Network Engineer</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Your Company/Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
