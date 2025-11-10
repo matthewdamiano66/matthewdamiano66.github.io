@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links – Matthew J. Damiano</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f9fa;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    /* ===== Hero ===== */
+    .links-hero {
+      background: linear-gradient(135deg, #4b0082 0%, #7c3aed 100%);
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+    }
+
+    .links-hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .links-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* ===== Icon Grid ===== */
+    .icon-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      justify-items: center;
+    }
+
+    .icon-card {
+      background: white;
+      width: 140px;
+      height: 140px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #4b0082;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .icon-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 14px rgba(75, 0, 130, 0.2);
+    }
+
+    .icon-card img {
+      width: 55px;
+      height: 55px;
+      margin-bottom: 0.6rem;
+      border-radius: 8px;
+    }
+
+    .icon-card p {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #4b0082;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .links-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .icon-card {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="navigation-list">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link active" href="links.html">Links</a></li>
+      <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+      <li class="nav-item"><a class="nav-link" href="violet_violin.html">My Company</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="links-hero">
+    <h1>Find Me Online</h1>
+    <p>Connect with me across professional and creative platforms.</p>
+  </section>
+
+  <main>
+    <div class="icon-container">
+      <a href="https://github.com/matthewdamiano66" target="_blank" class="icon-card">
+        <img src="files/GitHub-Logo.png" alt="GitHub" />
+        <p>GitHub</p>
+      </a>
+
+      <a href="https://www.linkedin.com/in/matthew-damiano-889225178/" target="_blank" class="icon-card">
+        <img src="files/Linkedin-Logo.png" alt="LinkedIn" />
+        <p>LinkedIn</p>
+      </a>
+
+      <a href="https://stackoverflow.com/users/13355155/rango-unfraimed" target="_blank" class="icon-card">
+        <img src="files/Stack-OverFlow-Logo.png" alt="Stack Overflow" />
+        <p>Stack Overflow</p>
+      </a>
+
+      <a href="https://www.youtube.com/mjdtcg" target="_blank" class="icon-card">
+        <img src="files/youtube.png" alt="YouTube" />
+        <p>YouTube</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Matthew J. Damiano | Violet Violin Accessibility</p>
+  </footer>
+</body>
+</html>
